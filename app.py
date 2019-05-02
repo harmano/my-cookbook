@@ -5,16 +5,16 @@ from bson.objectid import ObjectId
 
 app = Flask(__name__)
 
-app.config["MONGO_DBNAME"] = 'task_manager'
-app.config["MONGO_URI"] = os.getenv('MONGO_URI', 'mongodb+srv://harmano:r00tUser1@cluster0-ejawl.mongodb.net/task_manager?retryWrites=true')
+app.config["MONGO_DBNAME"] = 'cookbook'
+app.config["MONGO_URI"] = 'mongodb+srv://harmano:r00tUser1@cluster0-ejawl.mongodb.net/cookbook?retryWrites=true'
 
 mongo = PyMongo(app)
 
 
 @app.route('/')
-@app.route('/get_tasks')
-def get_tasks():
-    return render_template("tasks.html", tasks=mongo.db.tasks.find())
+@app.route('/get_recipes')
+def get_recipes():
+    return render_template("recipes.html", recipes=mongo.db.recipes.find())
 
 
 if __name__ == '__main__':
