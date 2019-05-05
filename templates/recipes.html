@@ -1,19 +1,35 @@
 {% extends 'base.html' %}
 {% block content %}
-    <ul class="collapsible" data-collapsible="accordion">
+    <ul class="collapsible container" data-collapsible="accordion">
         {% for recipe in recipes %}
         <li>
+            <div class=""><img src="{{recipe.picture}}"></img></div>
             <div class="collapsible-header">
-
                 <div class=" task_header col s9">
-                    <i class="material-icons">expand_more</i><strong>{{recipe.author}}</strong> - {{recipe.name}}
+                    <i class="material-icons">expand_more</i><strong>{{recipe.author}}</strong> - {{recipe.name}}  {{recipe.upvotes}} <i class="material-icons">thumb_up_alt</i>
                 </div>
             </div>
             <div class="collapsible-body">
-                <span>
-                   {{recipe.ingredients}}
-                </span>
+                <div class="row">
+                    <h7><i class="material-icons">subject</i>Ingredients</h7>
+                </div>
+                <div class="row">
+                    {{recipe.ingredients}}
+                </div>
+                <div class="row">
+                    <h7><i class="material-icons">list_alt</i>Instructions</h7>
+                </div>
+                <div class="row">
+                    <div class="col s12">
+                        <div>   
+                            <span>
+                               {{recipe.instructions}}
+                            </span>
+                        </div>      
+                    </div>
+                   </div> 
             </div>
+            
         </li>
         {% endfor %}
     </ul>
