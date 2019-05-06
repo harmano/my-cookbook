@@ -10,7 +10,7 @@
 <body>
     <header>
      <nav>
-            <div class="nav-wrapper">
+            <div class="nav-wrapper nav-color">
                 <a href="{{url_for('get_recipes')}}" class="brand-logo center">Cook Book</a>
                 <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
                 <ul id="nav-mobile" class="left hide-on-med-and-down">
@@ -25,6 +25,38 @@
                 </ul>
             </div>
         </nav>
+       <div class="slider">
+        <ul class="slides">
+          <li>
+            <img src="https://foodrevolution.org/wp-content/uploads/2018/04/blog-featured-diabetes-20180406-1330.jpg"> <!-- random image -->
+            <div class="caption center-align">
+              <h3>Top Fruit Mixed Meals!</h3>
+              <h5 class="light grey-text text-lighten-3">Fruit is healthy!</h5>
+            </div>
+          </li>
+          <li>
+            <img src="https://blog.fotolia.com/us/files/2016/12/00_Fotolia_119554650_L-1024x576.jpg"> <!-- random image -->
+            <div class="caption left-align">
+              <h3>Classic American Panacakes</h3>
+              <h5 class="light grey-text text-lighten-3">Gluten free.</h5>
+            </div>
+          </li>
+          <li>
+            <img src="https://img.grouponcdn.com/deal/cQ63VvZvmkUi3Kv2qpcB/ww-2048x1229/v1/c700x420.jpg"> <!-- random image -->
+            <div class="caption right-align">
+              <h3>JUICY Beef Burger</h3>
+              <h5 class="light grey-text text-lighten-3">Try with a side of blue cheese.</h5>
+            </div>
+          </li>
+          <li>
+            <img src="http://static.asiawebdirect.com/m/bangkok/portals/bangkok-com/homepage/food-top10/pagePropertiesImage/thai-som-tum.jpg.jpg"> <!-- random image -->
+            <div class="caption center-align">
+              <h3>Its all Thai!</h3>
+              <h5 class="light grey-text text-lighten-3">Straight from Bangkok.</h5>
+            </div>
+          </li>
+        </ul>
+      </div>
     </header>
     {% block content %} 
     {% endblock %}
@@ -36,9 +68,36 @@
             $('.collapsible').collapsible();
             $('select').material_select();
             $(".button-collapse").sideNav();
+            $('.slider').slider();
         });
      
     </script>
+    <!-- This the footer -->
+        <footer class="page-footer">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Footer Content</h5>
+                <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Links</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2014 Copyright Text
+            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+          </div>
+        </footer>
 </body>
 
 </html>
