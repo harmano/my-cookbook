@@ -47,9 +47,7 @@
     margin-top: 5px;
 }
 
-.nav-color{
-    background-color: #DEB887;
-}
+
 
 .avatar {
     vertical-align: middle;
@@ -63,7 +61,7 @@
     margin-left: auto;
     margin-right: auto;
     position: relative;
-    width: 200px;
+    width: 350px;
     text-align: center;
     margin-bottom: 50px;
 
@@ -148,4 +146,23 @@
 .margin-bottom{
   margin-bottom: 50px;
   margin-top: 50px;
+}
+
+div {
+  text-transform: uppercase;
+}
+
+.sizing{
+  width: 300px;
+  height: 300px;
+}
+
+nav ul a:hover{
+  text-decoration: none;
+  color: white;
+}
+
+nav .brand-logo.center:hover{
+  text-decoration: none;
+  color: white;
 }
