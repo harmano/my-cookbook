@@ -8,11 +8,10 @@
         <!-- Cusine Type, Profile pic  and Image---> 
         <div class="row">
            <div class="input-field col s3">
-              
-              <select id="cusine_type" name="cusine_cat">
-                <option value="" disabled selected> Cusine Type </option>
+              <select id="cusine" name="cusine_cat">
+                <i class="material-icons prefix">poll</i>
+                <option value="" selected> Cusine Type </option>
               {% for cus in cusine_type %}
-              <i class="material-icons prefix">poll</i>
                 <option value="{{cus.cusine_cat}}">{{cus.cusine_cat}}</option>
               {% endfor %}
               </select>
