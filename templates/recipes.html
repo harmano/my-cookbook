@@ -3,12 +3,12 @@
     <section class="container top-margin">
         <div class="row">
         {% for recipe in recipes %} {% if loop.index % 2 != 0 %} 
-        <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4 top-margin">
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-4 top-margin">
                 <div class="text-box">
                     <div><img src="{{recipe.picture}}" alt="Avatar" class="zoom img-thumbnail"></div>
                     <h5 class="sub-gen">{{recipe.name}}<i class="fas fa-microphone-alt icon"></i></h5>
                     <p> <img src="{{recipe.profile_pic}}" alt="Avatar" class="small-img"> {{recipe.author}}</p>
-                    
+
                 <ul class="collapsible">
                     <li>
                       <div class="collapsible-header"><i class="material-icons">more_horiz</i>Ingredients</div>
@@ -19,14 +19,14 @@
                       <div class="collapsible-body"><span> {{recipe.instructions}}</span></div>
                     </li>
                   </ul>
-                <a class="btn-floating btn-small waves-effect waves-light grey left"><i class="material-icons">clear</i></a>
-                <a class="btn-floating btn-small waves-effect waves-light red right"><i class="material-icons">create</i></a>
+                <a href="{{url_for('delete_recipes', recipe_id=recipe._id)}}" class="btn-floating btn-small waves-effect waves-light grey left"><i class="material-icons">clear</i></a>
+                <a href="{{url_for('edit_recipes', recipe_id=recipe._id)}}" class="btn-floating btn-small waves-effect waves-light red right"><i class="material-icons">create</i></a>
 
                 </div>
         </div>
         
         {% else %}
-       <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4 top-margin">
+       <div class="col-xs-6 col-sm-6 col-md-6 col-lg-4 top-margin">
                 <div class="text-box">
                     <div><img src="{{recipe.picture}}" alt="Avatar" class="zoom img-thumbnail"></div>
                     <h5 class="sub-gen">{{recipe.name}}<i class="fas fa-microphone-alt icon"></i></h5>
