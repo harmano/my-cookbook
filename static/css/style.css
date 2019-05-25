@@ -148,9 +148,6 @@
   margin-top: 50px;
 }
 
-div {
-  text-transform: uppercase;
-}
 
 .sizing{
   width: 300px;
@@ -166,3 +163,66 @@ nav .brand-logo.center:hover{
   text-decoration: none;
   color: white;
 }
+
+.bg-image{
+  background-image: url('https://img.wallpapersafari.com/desktop/1920/1080/11/5/i4FlQb.jpg');
+}
+
+.boxed {
+  border-radius: 80%;
+  width: 200px;
+  height: 50px; 
+  margin: 20px;
+}
+
+.upper-row {
+  margin-top: 10%;
+}
+
+.padding-cirlce{
+  margin: 10px;
+}
+
+.text-box-login{
+    border-radius: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: 350px;
+    text-align: center;
+    margin-bottom: 50px;
+    
+    
+}
+
+.collapsible-header{
+  border-radius: 50px;
+  border: 0px;
+}
+
+.bg-color-size{
+  background-color: white;
+  width: 350px;;
+  height: 50px;
+  border-radius: 50px;
+}
+
+.higher .chip{
+  width: 200px;
+  margin-top: 25px;
+  background-color: #E4E4E99D;
+  color: black;
+  margin-bottom: 25px;
+}
+
+.higher .chip a{
+  text-decoration: none;
+  color:black;
+}
+
+.higher .chip a:hover{
+  color: #26a69a;
+  text-decoration: none;
+ 
+}
+

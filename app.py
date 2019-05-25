@@ -12,8 +12,27 @@ app.config["MONGO_URI"] = 'mongodb+srv://harmano:r00tUser1@cluster0-ejawl.mongod
 
 mongo = PyMongo(app)
 
-
 @app.route('/', methods=["GET", "POST"])
+@app.route('/get_login')
+def get_login():
+    """Main page with login"""
+    if request.method == "POST":
+        session["username"] = request.form["username"]
+
+    if "username" in session:
+        return redirect(session["username"])
+
+    return render_template("login.html")
+
+@app.route("/<username>")
+def user(username):
+    """Display Name at the Top """
+    return render_template("recipes.html")
+
+
+
+
+
 @app.route('/get_recipes')
 def get_recipes():
     return render_template("recipes.html", 
