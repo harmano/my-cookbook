@@ -27,16 +27,15 @@ def get_login():
 @app.route("/<username>")
 def user(username):
     """Display Name at the Top """
-    return render_template("recipes.html")
-
-
+    return render_template("recipes.html", 
+            recipes=mongo.db.recipes.find())
 
 
 
 @app.route('/get_recipes')
 def get_recipes():
     return render_template("recipes.html", 
-            recipes=mongo.db.recipes.find())
+            recipes=mongo.db.recipes.find(), usernames=mongo.db.usernames.find())
 
 @app.route('/add_recipe')
 def add_recipe():
@@ -49,6 +48,14 @@ def insert_recipe():
     recipes = mongo.db.recipes
     recipes.insert_one(request.form.to_dict())
     return redirect(url_for('get_recipes'))
+
+
+@app.route('/insert_username', methods=['POST'])
+def insert_username():
+    usernames = mongo.db.usernames
+    usernames.insert_one(request.form.to_dict())
+    return redirect(url_for('get_recipes'))
+
 
 @app.route('/edit_recipes/<recipe_id>')
 def edit_recipes(recipe_id):

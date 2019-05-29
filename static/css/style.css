@@ -1,10 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower|Quicksand:100,200,300,400,500,600,700');
 
-
-
-.text-trans{
-    
-}
+/*...................... Font Types ................... */
 
 .font-fam{
     font-family: 'Pacifico', cursive;
@@ -13,12 +9,25 @@
 .font-fam2{
     font-family: 'Akronim', cursive;
 }
+
+.font-fam3{
+  color: ;
+}
+
+.font-fam4{
+    font-family: 'Pacifico', cursive;
+    color: ;
+    font-size: 16px;
+}
+/*...................... Base Views ................... */
+
 .container {
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
 }
+
 @media (min-width: 768px) {
   .container {
     width: 750px;
@@ -29,6 +38,7 @@
     width: 970px;
   }
 }
+
 @media (min-width: 1200px) {
   .container {
     width: 1170px;
@@ -47,14 +57,22 @@
     margin-top: 5px;
 }
 
+nav ul a:hover{
+  text-decoration: none;
+  color: white;
+}
 
+nav .brand-logo.center:hover{
+  text-decoration: none;
+  color: white;
+}
 
+/*...................... Recipe Box Type ................... */
+ 
 .avatar {
     vertical-align: middle;
     width: 150px;
     height:150px;
-    border-radius: ;
-    
 }
 
 .text-box{
@@ -82,6 +100,32 @@
     padding-bottom: 20px;
 }
 
+.alert-warning2 {
+  background-color: #EE6E74;
+  color: white;
+}
+/*...................... Image ................... */
+.circular--landscape {
+  display: inline-block;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+  
+}
+
+
+.bg-image{
+  background-image: url('https://img.wallpapersafari.com/desktop/1920/1080/11/5/i4FlQb.jpg');
+}
+
+.circular--landscape img {
+  width: auto;
+  height: 100%;
+  margin-left: -50px;
+}
+
 .small-img {
   vertical-align: middle;
   width: 25px;
@@ -91,21 +135,16 @@
   border-color: blue;
 }
 
-.top-margin{
-    margin-top: 50px;
-    margin-bottom: 30px;
-}
-
 .zoom {
   padding: 50px;
-  transition: transform 1.3s;
+  transition: transform .5s;
   width: 200px;
   height: 200px;
   margin: 0 auto;
 }
 
 .zoom:hover {
-  transform: scale(2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  transform: scale(1.5); 
 }
 
 .centered-page {
@@ -119,28 +158,15 @@
 .background-color{
     background-color: #DEB887;
 }
+/*...................... Margin  ................... */
 
-.btn_small {
-    height: 24px;
-    width: 60px;
-    line-height: 24px;
-    margin: 5px 5px;
+.top-margin{
+    margin-top: 50px;
+    margin-bottom: 30px;
 }
 
-.circular--landscape {
-  display: inline-block;
-  position: relative;
-  width: 200px;
-  height: 200px;
-  overflow: hidden;
-  border-radius: 50%;
-  
-}
-
-.circular--landscape img {
-  width: auto;
-  height: 100%;
-  margin-left: -50px;
+.upper-row {
+  margin-top: 10%;
 }
 
 .margin-bottom{
@@ -154,19 +180,17 @@
   height: 300px;
 }
 
-nav ul a:hover{
-  text-decoration: none;
-  color: white;
+
+/*...................... Login  ................... */
+
+.btn_small {
+    height: 24px;
+    width: 60px;
+    line-height: 24px;
+    margin: 5px 5px;
 }
 
-nav .brand-logo.center:hover{
-  text-decoration: none;
-  color: white;
-}
 
-.bg-image{
-  background-image: url('https://img.wallpapersafari.com/desktop/1920/1080/11/5/i4FlQb.jpg');
-}
 
 .boxed {
   border-radius: 80%;
@@ -175,13 +199,13 @@ nav .brand-logo.center:hover{
   margin: 20px;
 }
 
-.upper-row {
-  margin-top: 10%;
-}
+
 
 .padding-cirlce{
   margin: 10px;
 }
+
+
 
 .text-box-login{
     border-radius: 50px;
@@ -209,7 +233,7 @@ nav .brand-logo.center:hover{
 
 .higher .chip{
   width: 200px;
-  margin-top: 25px;
+  margin-top: 20px;
   background-color: #E4E4E99D;
   color: black;
   margin-bottom: 25px;
@@ -226,3 +250,39 @@ nav .brand-logo.center:hover{
  
 }
 
+.text-login{
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: 200px;
+    text-align: center;
+    margin-bottom: 2px;
+    color: white;
+
+}
+
+label {
+    font-size: .8rem;
+    color: white;
+    margin: 0;
+}
+
+.center-add {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.margin-top{
+  margin-top: 25px;
+}
+
+.margin-bottom{
+  margin-bottom: 40px;
+}
+
+.font-fam4{
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
+}

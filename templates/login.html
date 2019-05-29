@@ -1,13 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-        <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}" type="text/css" />
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css?family=Akronim|Modak|Pacifico" rel="stylesheet">
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-        <style type="text/css">
+          <style type="text/css">
             button, input[type="submit"], input[type="reset"] {
             	background: none;
             	color: inherit;
@@ -17,41 +11,48 @@
             	cursor: pointer;
             	outline: inherit;
             }
+            
+            .margin-login{
+                margin: 10px;
+            }
         </style>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+        <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}" type="text/css" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        
+        <link href="https://fonts.googleapis.com/css?family=Akronim|Modak|Pacifico" rel="stylesheet">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      
    
     </head>
     <body class=" bg-image ">
         <div class="upper-row container center-align">
             <div class="font-fam"> <h2>Welcome</h2></div>
-            <div class="">
+        
+        <div class="">
                 <a class="btn-floating pulse z-depth-4 padding-cirlce"><i class="material-icons">assignment</i></a>
-            
             <div class="higher">
-                
-                 <form method="POST">
-                            <label for="username">Username:</label>
-                            <input type="text" id="username" name="username">
-                            
-                                 <div class="chip">
+                 <form method="POST" action="{{ url_for('insert_username') }}" >
+                     <div class="text-login ">
+                        <label for="username" ></label>
+                        <input class="center" type="text" id="username" name="username" placeholder="Enter Username">
+                     </div>       
+                    <div class="chip">
                                      
-                                         <h><button>Login</button></h4>
+                        <h><button>Login</button></h4>
                                      
-                                </div>  
+                    </div>  
                             
                 </form>
-                   
-                       
-           
                 
-                <div class="text-center  font-fam">
+                <div class="text-center  font-fam margin-login">
                     <h3>Or</h3>
                 </div>
                 <div class="chip">
                     <a href="{{url_for('get_recipes')}}"> <h>Conintue as Guest</h4></a>
                 </div> 
-                
             </div>
-   
         </div>
                  
                
