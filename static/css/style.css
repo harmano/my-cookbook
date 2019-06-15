@@ -10,15 +10,17 @@
     font-family: 'Akronim', cursive;
 }
 
-.font-fam3{
-  color: ;
-}
 
 .font-fam4{
     font-family: 'Pacifico', cursive;
-    color: ;
     font-size: 16px;
 }
+
+.font-fam5{
+    font-family: 'Ranga', cursive;
+}
+
+ 
 /*...................... Base Views ................... */
 
 .container {
@@ -190,7 +192,17 @@ nav .brand-logo.center:hover{
     margin: 5px 5px;
 }
 
+.bg-login{
+  background-color: #ff6d6d96;
 
+  height: 500px; 
+
+  border-radius: 5%;
+  padding: 30px;
+  margin: auto;
+  width: 20%;
+  margin-top: 200px;
+}
 
 .boxed {
   border-radius: 80%;
@@ -286,3 +298,4 @@ label {
     font-family: 'Pacifico', cursive;
     font-size: 50px;
 }
+

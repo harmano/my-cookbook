@@ -5,7 +5,7 @@ from bson.objectid import ObjectId
 
 app = Flask(__name__)
 
-app.secret_key = "randomstring123"
+app.secret_key = os.getenv("SECRET","randomstring123")
 
 app.config["MONGO_DBNAME"] = 'cookbook'
 app.config["MONGO_URI"] = 'mongodb+srv://harmano:r00tUser1@cluster0-ejawl.mongodb.net/cookbook?retryWrites=true'
@@ -27,6 +27,7 @@ def get_login():
 @app.route("/<username>")
 def user(username):
     """Display Name at the Top """
+    
     return render_template("recipes.html", 
             recipes=mongo.db.recipes.find())
 
@@ -34,8 +35,9 @@ def user(username):
 
 @app.route('/get_recipes')
 def get_recipes():
+    all_usernames_type = mongo.db.usernames.find()
     return render_template("recipes.html", 
-            recipes=mongo.db.recipes.find(), usernames=mongo.db.usernames.find())
+            recipes=mongo.db.recipes.find(), usernames = all_usernames_type)
 
 @app.route('/add_recipe')
 def add_recipe():
@@ -87,7 +89,6 @@ def delete_recipes(recipe_id):
 
 
 if __name__ == '__main__':
-    app.run(host=os.environ.get('IP'),
-            port=int(os.environ.get('PORT')),
-            debug=True) 
-            
+    app.run(host=os.environ.get('IP', "0.0.0.0"),
+            port=int(os.environ.get('PORT', "5000")),
+            debug=False) 

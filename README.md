@@ -9,7 +9,8 @@ User Stories
 * User 1: As a chef, I want to go to the add recipe tab, so I can upload a recipe
 * User 2: As a viewer, I would maneuver the home page, so I could view other recipes
 
-==Link to Mockup==
+Mock Up
+* /static/media/images
 
 ## Features
 The Cookbook includes the following features:
@@ -90,6 +91,6 @@ This project was deployed through Heroku, and does not differ from other version
 ## Credits
 ### Content
 * Home Photo of number 1: https://foodrevolution.org/wp-content/uploads/2018/04/blog-featured-diabetes-20180406-1330.jpg
-* Home Photo of number 2: http://cdn.miscellaneoushi.com/2560x1600/20121019/food%20pancakes%20cakes%202560x1600%20wallpaper_www.miscellaneoushi.com_47.jpg
-* Home Photo of number 3: https://images.unsplash.com/photo-1536510233921-8e5043fce771?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80
-* Home Photo of number 4: http://static.asiawebdirect.com/m/bangkok/portals/bangkok-com/homepage/food-top10/pagePropertiesImage/thai-som-tum.jpg.jpg
+* Home Photo of number 2: https://images.pexels.com/photos/132694/pexels-photo-132694.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260
+* Home Photo of number 3: https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260
+* Home Photo of number 4: https://images.pexels.com/photos/1268550/pexels-photo-1268550.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260

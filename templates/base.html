@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Akronim|Modak|Pacifico" rel="stylesheet">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Ranga&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -21,7 +22,7 @@
                     <li><a href="{{url_for('add_recipe')}}">Add Recipes</a></li>
                 </ul>
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li><a href="{{url_for('get_login')}}"> Welcome</a></li>
+                    <li><a href="{{url_for('get_login')}}"> Welcome {{ username }}</a></li>
                 </ul>
                 <ul class="side-nav" id="mobile-demo">
                     <li><a href="{{url_for('get_recipes')}}">Recipes</a></li>
@@ -34,28 +35,28 @@
         <ul class="slides">
           <li>
             <img src="https://foodrevolution.org/wp-content/uploads/2018/04/blog-featured-diabetes-20180406-1330.jpg"> <!-- random image -->
-            <div class="caption center-align">
+            <div class="font-fam5 caption center-align">
               <h3>Top Fruit Mixed Meals!</h3>
               <h5 class="light grey-text text-lighten-3">Fruit is healthy!</h5>
             </div>
           </li>
           <li>
-            <img src="http://cdn.miscellaneoushi.com/2560x1600/20121019/food%20pancakes%20cakes%202560x1600%20wallpaper_www.miscellaneoushi.com_47.jpg"> <!-- random image -->
-            <div class="caption left-align">
-              <h3>Classic American Panacakes</h3>
+            <img src="https://images.pexels.com/photos/132694/pexels-photo-132694.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"> <!-- random image -->
+            <div class="font-fam5 caption left-align">
+              <h3>Classic American Cake</h3>
               <h5 class="light grey-text text-lighten-3">Gluten free.</h5>
             </div>
           </li>
           <li>
-            <img src="https://images.unsplash.com/photo-1536510233921-8e5043fce771?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80"> <!-- random image -->
-            <div class="caption right-align">
+            <img src="https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"> <!-- random image -->
+            <div class="font-fam5 caption right-align">
               <h3>JUICY Beef Burger</h3>
               <h5 class="light grey-text text-lighten-3">Try with a side of blue cheese.</h5>
             </div>
           </li>
           <li>
-            <img src="http://static.asiawebdirect.com/m/bangkok/portals/bangkok-com/homepage/food-top10/pagePropertiesImage/thai-som-tum.jpg.jpg"> <!-- random image -->
-            <div class="caption center-align">
+            <img src="https://images.pexels.com/photos/1268550/pexels-photo-1268550.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"> <!-- random image -->
+            <div class="font-fam5 caption center-align">
               <h3>Its all Thai!</h3>
               <h5 class="light grey-text text-lighten-3">Straight from Bangkok.</h5>
             </div>
