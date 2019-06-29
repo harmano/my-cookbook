@@ -66,7 +66,7 @@ Delete Recipe:
 Add Recipe:
 * Go to “Add” page
 * Submit an empty form and verify that an error message about the required fields appears
-* Submit the a filled form 
+* Submit the filled form 
 * Redirects to “Home” page
 * Recipe Appears
 
