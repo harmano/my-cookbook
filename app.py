@@ -5,7 +5,6 @@ from bson.objectid import ObjectId
 
 app = Flask(__name__)
 
-app.secret_key = os.getenv("SECRET","randomstring123")
 
 app.config["MONGO_DBNAME"] = 'thecookbook'
 app.config["MONGO_URI"] = 'mongodb+srv://harmano:r00tUser1@cluster0-ejawl.mongodb.net/cookbook?retryWrites=true'
