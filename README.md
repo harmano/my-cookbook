@@ -1,8 +1,4 @@
----
-permalink: /login.html
----
-
-# The Coo kbook
+# The Cook book
 The Cookbook is a community of chefs who have come together to share and utilize some of the most unique recipes the online community has to offer. With a few simple steps, users can sign up, add a recipe and within a few seconds have it display for the world to see. Editing and deleting is also currently available, although the process is not completely secure as of yet. Future site renovation plans are set to include both a secure user login functionality, as well as a site search bar, which will allow users to filter through recipes based on a variety of key terms.
 
 ## UX
